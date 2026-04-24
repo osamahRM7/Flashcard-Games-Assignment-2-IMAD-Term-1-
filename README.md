@@ -6,6 +6,11 @@
 <img width="270" height="600" alt="Screenshot_20260424_201648" src="https://github.com/user-attachments/assets/841ff021-b808-4698-aa31-7112188c2081" />
 
 
+#2# SECONDPAGE (QUASTIONPAGE)
+<img width="270" height="600" alt="Screenshot_20260424_201755" src="https://github.com/user-attachments/assets/1446739d-e940-4947-9753-349787c61d9c" />
+
+
+
 
 
 
