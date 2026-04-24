@@ -5,6 +5,43 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#073185"
     tools:context=".AnswerTheQusation">
 
+    <TextView
+        android:id="@+id/textQusation"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="44dp"
+        android:textColor="#C4DCD9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:background="@color/green"
+        android:text="@string/True"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFalse"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQusation"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="111dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/myColor"
+        android:text="@string/False"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQusation"
+        app:layout_constraintVertical_bias="0.114" />
 </androidx.constraintlayout.widget.ConstraintLayout>

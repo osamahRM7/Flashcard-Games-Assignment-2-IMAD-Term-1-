@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#32A697"
+    android:background="#073185"
     tools:context=".MainActivity">
 
     <TextView
@@ -47,23 +47,23 @@
 
     <Button
         android:id="@+id/btnSport"
-        android:layout_width="210dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
         android:text="@string/sport_games"
         app:layout_constraintBottom_toTopOf="@+id/btnHistory"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.033"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnHistory"
-        android:layout_width="214dp"
-        android:layout_height="57dp"
+        android:layout_width="202dp"
+        android:layout_height="67dp"
         android:text="@string/history_games"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteY="319dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
