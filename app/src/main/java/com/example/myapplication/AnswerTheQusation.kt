@@ -1,18 +1,19 @@
 package com.example.myapplication
 
+import android.content.Intent // Make sure this import is here
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import android.widget.Toast // Added missing import
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class AnswerTheQusation : AppCompatActivity() {
 
     private var currentQuestionIndex = 0
+    private var score = 0 // 1. Added score tracker
     private lateinit var questionList: List<Question>
 
-    // Define the data class ONCE here
     data class Question(val text: String, val answer: Boolean)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,7 +52,6 @@ class AnswerTheQusation : AppCompatActivity() {
             else -> listOf(Question("Error loading questions", true))
         }
 
-        // Use 'textQusation' (the variable name), not 'Question' (the class name)
         updateQuestion(textQusation)
 
         btnTrue.setOnClickListener {
@@ -67,9 +67,11 @@ class AnswerTheQusation : AppCompatActivity() {
         if (currentQuestionIndex < questionList.size) {
             textView.text = questionList[currentQuestionIndex].text
         } else {
-            textView.text = "Game Over! You finished all questions."
-            findViewById<Button>(R.id.btnTrue).isEnabled = false
-            findViewById<Button>(R.id.btnFalse).isEnabled = false
+            // 2. Launch the ResultPage when questions are finished
+            val intent = Intent(this, ResultPage::class.java)
+            intent.putExtra("RESULT", score) // Pass the actual score
+            startActivity(intent)
+            finish() // Close this activity
         }
     }
 
@@ -77,6 +79,7 @@ class AnswerTheQusation : AppCompatActivity() {
         val correctAnswer = questionList[currentQuestionIndex].answer
 
         if (userChoice == correctAnswer) {
+            score++ // 3. Increase score if correct
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()

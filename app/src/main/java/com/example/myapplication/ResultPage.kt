@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -27,15 +28,17 @@ class ResultPage : AppCompatActivity() {
             textMessage.text = "Keep trying! "
         }
 
+        // Logic to return home
+        btnExit.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+
+            // This tells Android: "Clear all the other screens so Home is the only one open"
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+
+            startActivity(intent)
+            finish() // Closes the ResultActivity
 
 
-
-
-
-
-
-
-
-
+        }
     }
 }

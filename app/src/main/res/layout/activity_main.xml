@@ -23,12 +23,11 @@
 
     <ImageView
         android:id="@+id/imageFlash"
-        android:layout_width="394dp"
-        android:layout_height="261dp"
+        android:layout_width="442dp"
+        android:layout_height="263dp"
         android:background="#32A697"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.957"
         app:srcCompat="@drawable/unnamed" />
 
     <Button
@@ -38,20 +37,20 @@
         android:text="@string/math_games"
         app:layout_constraintBottom_toTopOf="@+id/btnSport"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextFlash"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.725" />
 
     <Button
         android:id="@+id/btnSport"
         android:layout_width="204dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/sport_games"
         app:layout_constraintBottom_toTopOf="@+id/btnHistory"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -59,7 +58,7 @@
         android:layout_width="202dp"
         android:layout_height="67dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="120dp"
         android:text="@string/history_games"
         app:layout_constraintBottom_toTopOf="@+id/imageFlash"
         app:layout_constraintStart_toStartOf="parent" />
