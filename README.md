@@ -1,6 +1,12 @@
 # Flashcard-Games-Assignment-2-IMAD-Term-1-
 
 
+#1# HOMEPAGE
+
+<img width="270" height="600" alt="Screenshot_20260424_201648" src="https://github.com/user-attachments/assets/841ff021-b808-4698-aa31-7112188c2081" />
+
+
+
 
 
 
