@@ -18,6 +18,15 @@ class ResultPage : AppCompatActivity() {
         val textMessage = findViewById<TextView>(R.id.textMessage)
         val btnExit = findViewById<Button>(R.id.btnExit)
 
+        val result = intent.getIntExtra("RESULT", 0)
+        textResult.text = "Your Final Score: $result / 5"
+
+
+
+
+
+
+
 
 
 
