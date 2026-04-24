@@ -21,6 +21,13 @@ class ResultPage : AppCompatActivity() {
         val result = intent.getIntExtra("RESULT", 0)
         textResult.text = "Your Final Score: $result / 5"
 
+        if (result >= 3) {
+            textMessage.text = "You did great! "
+        } else {
+            textMessage.text = "Keep trying! "
+        }
+
+
 
 
 
