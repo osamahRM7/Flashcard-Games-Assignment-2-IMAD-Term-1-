@@ -20,15 +20,18 @@ class MainActivity : AppCompatActivity() {
 
         btnMath.setOnClickListener {
             val intent = Intent(this, AnswerTheQusation::class.java)
+            intent.putExtra("gameType", "Math")
             startActivity(intent)
         }
 
         btnSport.setOnClickListener {
             val intent = Intent(this, AnswerTheQusation::class.java)
+            intent.putExtra("gameType", "Sport")
             startActivity(intent)
         }
         btnHistory.setOnClickListener {
             val intent = Intent(this, AnswerTheQusation::class.java)
+            intent.putExtra("gameType", "History")
             startActivity(intent)
         }
 
