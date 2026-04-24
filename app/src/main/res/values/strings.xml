@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="math_games">Math Games</string>
+    <string name="sport_games">Sport Games</string>
+    <string name="history_games">History Games</string>
+    <string name="flashcards_game">Flashcards Game</string>
 </resources>
