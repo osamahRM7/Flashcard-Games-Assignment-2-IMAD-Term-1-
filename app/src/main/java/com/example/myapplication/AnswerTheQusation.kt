@@ -11,7 +11,7 @@ class AnswerTheQusation : AppCompatActivity() {
 
     private var currentQuestionIndex = 0
     private lateinit var questionList: List<Question>
-
+    data class Question(val text: String, val answer: Boolean)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +23,8 @@ class AnswerTheQusation : AppCompatActivity() {
         val btnFalse = findViewById<Button>(R.id.btnFalse)
 
         val gameType = intent.getStringExtra("gameType")
+
+
 
 
 
