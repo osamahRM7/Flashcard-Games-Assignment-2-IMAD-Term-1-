@@ -12,5 +12,6 @@ class ResultPage : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_resulte_page)
 
+
     }
 }
