@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.072" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnExit"
         android:layout_width="145dp"
         android:layout_height="66dp"
         android:layout_marginBottom="280dp"
