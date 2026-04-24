@@ -34,9 +34,5 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("gameType", "History")
             startActivity(intent)
         }
-
-
-
-
     }
 }
