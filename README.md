@@ -10,6 +10,11 @@
 <img width="270" height="600" alt="Screenshot_20260424_201755" src="https://github.com/user-attachments/assets/1446739d-e940-4947-9753-349787c61d9c" />
 
 
+#3# LASTPAGE (RESULT PAGE)
+<img width="270" height="600" alt="Screenshot_20260424_201939" src="https://github.com/user-attachments/assets/1527d454-d36d-4712-aaae-1f4c1eb7f62e" />
+
+
+
 
 
 
