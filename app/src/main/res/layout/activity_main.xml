@@ -61,6 +61,7 @@
         android:layout_width="202dp"
         android:layout_height="67dp"
         android:text="@string/history_games"
+        app:layout_constraintBottom_toTopOf="@+id/imageFlash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
