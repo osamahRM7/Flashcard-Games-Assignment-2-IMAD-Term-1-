@@ -461,3 +461,13 @@ Running on v.2.3.21
 To convert primitive-type arrays to object-type arrays, use the .toTypedArray() function.
 
 To convert object-type arrays to primitive-type arrays, use .toBooleanArray(), .toByteArray(), .toCharArray(), and so on.
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+OSAMAH KHALED ALBATATI
+ST10477069
+https://youtube.com/shorts/tuCLBG_G8Fw?si=89oGvkzj5XKMETgj
+https://youtu.be/Q-FAvfMi0Ps?si=uD--SCLV40Oegg96
