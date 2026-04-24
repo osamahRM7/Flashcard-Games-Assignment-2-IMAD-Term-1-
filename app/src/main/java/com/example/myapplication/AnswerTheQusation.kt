@@ -3,14 +3,16 @@ package com.example.myapplication
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast // Added missing import
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 class AnswerTheQusation : AppCompatActivity() {
 
     private var currentQuestionIndex = 0
     private lateinit var questionList: List<Question>
+
+    // Define the data class ONCE here
     data class Question(val text: String, val answer: Boolean)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +26,6 @@ class AnswerTheQusation : AppCompatActivity() {
 
         val gameType = intent.getStringExtra("gameType")
 
-        // 2. Load 5 questions based on the category
         questionList = when (gameType) {
             "Math" -> listOf(
                 Question("Does 100 + 50 = 145.", false),
@@ -50,7 +51,39 @@ class AnswerTheQusation : AppCompatActivity() {
             else -> listOf(Question("Error loading questions", true))
         }
 
+        // Use 'textQusation' (the variable name), not 'Question' (the class name)
+        updateQuestion(textQusation)
 
+        btnTrue.setOnClickListener {
+            checkAnswer(true, textQusation)
+        }
 
+        btnFalse.setOnClickListener {
+            checkAnswer(false, textQusation)
+        }
+    }
+
+    private fun updateQuestion(textView: TextView) {
+        if (currentQuestionIndex < questionList.size) {
+            textView.text = questionList[currentQuestionIndex].text
+        } else {
+            textView.text = "Game Over! You finished all questions."
+            findViewById<Button>(R.id.btnTrue).isEnabled = false
+            findViewById<Button>(R.id.btnFalse).isEnabled = false
+        }
+    }
+
+    private fun checkAnswer(userChoice: Boolean, textView: TextView) {
+        val correctAnswer = questionList[currentQuestionIndex].answer
+
+        if (userChoice == correctAnswer) {
+            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "Wrong!", Toast.LENGTH_SHORT).show()
+        }
+
+        currentQuestionIndex++
+        updateQuestion(textView)
     }
 }
+
